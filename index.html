@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Website Html CSS & Javascript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <img src="./images/mosque.jpg" class="mosque" alt="">
+    <header>
+      <a class="logo" href="#">Lo<span>go.</span></a>
+      <div class="toggle"></div>
+      <ul class="nav">
+        <li><a href="#" style="--i:1;" class="active">Home</a></li>
+        <li><a href="#" style="--i:2;">About</a></li>
+        <li><a href="#" style="--i:3;">Calendar</a></li>
+        <li><a href="#" style="--i:4;">Blog</a></li>
+        <li><a href="#" style="--i:5;">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textbox">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, asperiores perspiciatis pariatur sint nemo quaerat fugiat, voluptatum, hic aspernatur repellendus dolor sit eaque? Error provident reprehenderit praesentium, doloribus necessitatibus rem?
+  
+        </p>
+        <a href="#">Read more</a>
+      </div>
+      
+    </div>
+    <ul class="sci">
+      <li><a href="#" style="--i:10;"><img src="./images/facebook.png" alt=""></a></li>
+      <li><a href="#" style="--i:11;"> <img src="./images/twitter.png" alt=""></a></li>
+      <li><a href="#"style="--i:12;"><img src="./images/instagram.png" alt=""></a></li>
+    </ul>
+  </section>
+  <script>
+    const menutoggle =document.querySelector(".toggle");
+    const nav = document.querySelector(".nav");
+    menutoggle.onclick = function(){
+      menutoggle.classList.toggle('active');
+      nav.classList.toggle('active');
+    }
+  </script>
+  
+</body>
+</html>
